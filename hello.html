@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="hello.css">
-</head>
-<body>
-    <h1 class="head" >Attendence Calculator</h1>
-   <div class="box">
-    <p class="lec" >Total Lecture</p>
-    <input type="text" id="a" class="input" placeholder="enter total lecture">
-    <p class="lec" >Attended Lecture</p>
-    <input type="text"  id="b" class="input"  placeholder="lecture attended">
-    <button class="button" onclick=calculate()>Calculate</button>
-    <p class="res" id="r"></p></div> 
-    <script src="hello.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="hello.css">
+    </head>
+    <body>
+        <h1 class="head" >Attendence Calculator</h1>
+        <div class="box">
+            <div class="wrapper">
+                <div class="group">
+                    <p class="lec" >Total Lecture</p>
+                    <input type="text" id="a" class="input" placeholder="enter total lecture">
+                </div>
+                <div class="group">
+                    <p class="lec" >Attended Lecture</p>
+                    <input type="text"  id="b" class="input"  placeholder="lecture attended">
+                </div>
+            </div>
+            <button class="button" onclick=calculate()>Calculate</button>
+        </div> 
+        <p class="res" id="r"></p>
+        <script src="hello.js"></script>
+    </body>
 </html>
