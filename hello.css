@@ -1,17 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+}
+body {
     background-color: antiquewhite;
 }
-.head{margin: 150px;
+.head{
+    margin-block: 4rem;
     text-align: center;
+    font-size: 3rem;
     color:#682b84;
 }
 .lec{ font-weight: 700;    color: #bb5a5a;
-    margin: 20px;
+    margin-block: 1rem;
 }
 .box{
-    margin-left: 500px;
+    width: fit-content;
+    max-width: fit-content;
+    display: flex;
+    gap: 1rem;
+    margin-inline: auto;
+    align-items: end;
 }
 .input{
     color: rgb(89, 112, 132);
@@ -19,15 +28,43 @@
     padding: 5px;
 }
 .button{
+    outline: 0;
+    border: 0;
     background-color: #682b84;
-    color: whitesmoke;
+    color: white;
     padding: 9px;
-    margin-left:20px ;
     border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid transparent;
+    transition: color 1s, background-color 1s;
+}
+.button:hover{
+    cursor: pointer;
+    color: #682b84;
+    background-color: white;
+    border: 2px solid #682b84;
+    transition: color 1s, background-color 1s;
 }
 .res{
-    font-weight: 700;    color: #bb5a5a;
-    margin-left: 100px;
-    margin-top: 70px;
+    text-align: center;
+    font-weight: 700;
+    color: #bb5a5a;
+    margin-inline: auto;
+    margin-top: 2rem;
 
+}
+
+.success {
+    color: #0ee30e;
+}
+
+.fail {
+    color: #f8412e;
+}
+
+@media only screen and (max-width: 600px) {
+    .box{
+        flex-direction: column;
+    }
 }
